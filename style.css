@@ -6,10 +6,10 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#color_black_green {
+.color_black_green {
     background-color: #222601;
 }
 
-#color_white_green {
+.color_white_green {
     background-color: #838C3B;
 }
