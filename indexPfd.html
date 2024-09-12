@@ -178,16 +178,22 @@
         window.onload = function() {
             if (isMobileDevice()) {
                 document.getElementById('pdf-container-1').innerHTML = `
+                    <div class="card-body">
                     <h5 class="card-title text-white">Лист адестації ліцею</h5>
-                    <p><a href="FFiles/Лист адестації ліцею №7.pdf" download>Завантажити PDF</a></p>
+                    <p><a href="FFiles/Лист адестації ліцею №7.pdf">Завантажити PDF</a></p>
+                    </div>
                 `;
                 document.getElementById('pdf-container-2').innerHTML = `
+                <div class="card-body">
                     <h5 class="card-title text-white">Ліцензія Фастівського ліцею №7</h5>
-                    <p><a href="Files/Ліцензія Фастівського ліцею №7.pdf" download>Завантажити PDF</a></p>
+                    <p><a href="Files/Ліцензія Фастівського ліцею №7.pdf">Завантажити PDF</a></p>
+                    </div>
                 `;
                 document.getElementById('pdf-container-3').innerHTML = `
+                <div class="card-body">
                 <h5 class="card-title text-white">Стратегія розвитки у Фастівського ліцею №7</h5>
-                    <p><a href="Files/Стратегія_розвитки_у_Фастівського_ліцею_№7.pdf" download>Завантажити PDF</a></p>
+                    <p><a href="Files/Стратегія_розвитки_у_Фастівського_ліцею_№7.pdf">Завантажити PDF</a></p>
+                    </div>
                 `;
             }
         };
