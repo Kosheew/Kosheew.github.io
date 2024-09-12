@@ -118,7 +118,7 @@
 
                     <div class="card mb-3 " style="max-width: 100%; background-color: #222601; ">
                         <div class="row g-0">
-                            <div id="pdf-container">
+                            <div id="pdf-container-1">
                             <iframe src="Files/Лист адестації ліцею №7.pdf" width="100%" style="min-height: 500px; height: 100vh;"></iframe>
                         </div>
                         </div>
@@ -131,7 +131,7 @@
 
                     <div class="card mb-3 " style="max-width: 100%; background-color: #222601; ">
                         <div class="row g-0">
-                            <div id="pdf-container">
+                            <div id="pdf-container-2">
                             <iframe src="Files/Ліцензія Фастівського ліцею №7.pdf" width="100%" style="min-height: 500px; height: 100vh;"></iframe>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
 
                     <div class="card mb-3 " style="max-width: 100%; background-color: #222601; ">
                         <div class="row g-0">
-                            <div id="pdf-container">
+                            <div id="pdf-container-3">
                             <iframe src="Files/Стратегія_розвитки_у_Фастівського_ліцею_№7.pdf" width="100%" style="min-height: 500px; height: 100vh;"></iframe>
                         </div>
                         </div>
@@ -177,8 +177,17 @@
     
         window.onload = function() {
             if (isMobileDevice()) {
-                document.getElementById('pdf-container').innerHTML = `
-                    <p>PDF файл може не відображатися на мобільному пристрої. <a href="Files/Ліцензія Фастівського ліцею №7.pdf" download>Завантажити PDF</a></p>
+                document.getElementById('pdf-container-1').innerHTML = `
+                    <h5 class="card-title text-white">Лист адестації ліцею</h5>
+                    <p><a href="FFiles/Лист адестації ліцею №7.pdf" download>Завантажити PDF</a></p>
+                `;
+                document.getElementById('pdf-container-2').innerHTML = `
+                    <h5 class="card-title text-white">Ліцензія Фастівського ліцею №7</h5>
+                    <p><a href="Files/Ліцензія Фастівського ліцею №7.pdf" download>Завантажити PDF</a></p>
+                `;
+                document.getElementById('pdf-container-3').innerHTML = `
+                <h5 class="card-title text-white">Стратегія розвитки у Фастівського ліцею №7</h5>
+                    <p><a href="Files/Стратегія_розвитки_у_Фастівського_ліцею_№7.pdf" download>Завантажити PDF</a></p>
                 `;
             }
         };
